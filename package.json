@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "archiver": "^2.1.0",
+    "axios": "^0.18.0",
     "babel-cli": "^6.7.7",
     "babel-core": "^6.22.1",
     "babel-eslint": "7",
@@ -23,6 +24,7 @@
     "eslint-import-resolver-webpack": "^0.8.4",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.5.0",
+    "extract-zip": "^1.6.7",
     "fs-extra": "5.0.0",
     "glob": "^7.1.2",
     "jest": "^22.0.4",
@@ -32,6 +34,7 @@
     "jquery": "^3.2.1",
     "terminate": "^2.1.0",
     "to-string-loader": "^1.1.5",
+    "unzip": "^0.1.11",
     "webpack": "^3.10.0",
     "yargs": "^11.0.0"
   },
@@ -64,7 +67,8 @@
     "gen:settings": "node scripts/generateSettings",
     "gen:docs": "yarn gen:settings && node scripts/generateDocs",
     "l10n:push": "scripts/update_l10n_strings",
-    "l10n:pull": "scripts/get_l10ns"
+    "l10n:pull": "scripts/get_l10ns",
+    "gen:l10n": "node scripts/localizations"
   },
   "babel": {
     "presets": [
